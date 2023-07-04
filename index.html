@@ -1,0 +1,78 @@
+<! DOCTYPE html>  
+<html>  
+    <head>  
+    <title>  
+         C1 using HTML Example  
+    </title> 
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        table{
+            margin-top: 50px;
+            border: 2px solid green;
+        }
+        td{
+            width: 455px;
+        }
+        .display{
+            height: 100px;
+            width: 100%;
+            font-size: 60px;
+        }
+        .input-area{
+            height: 300px;
+            background-color: green;
+        }
+        .input-area input{
+            height: 75px;
+            width: 100px;
+            font-size: 40px;
+            margin: 5px;
+        }
+        .input-area input:hover{
+            background-color: #f800f8;
+            border: none;
+        }
+    </style>
+</head>  
+<body> 
+ <form name="C1" class = "C1" >
+<table align="center"> 
+<tr>  
+<td>  
+<input class="display" type="text" name="Input">  
+<br>  
+</td>  
+</tr>
+<tr>  
+<td class="input-area">  
+<input type="button" name = "one"  value=" 1 " OnClick="C1.Input.value += '1'">  
+<input type="button" name = "two"  value=" 2 " OnCLick="C1.Input.value += '2'">  
+<input type="button" name = "three" value=" 3 " OnClick="C1.Input.value += '3'">  
+<input type="button" name="add" class ="btnTop"  value=" + " OnClick="C1.Input.value += ' + '">  
+<br>  
+<input type="button" name = "four"  value=" 4 " OnClick="C1.Input.value += '4'">  
+<input type="button" name = "five"  value=" 5 " OnCLick="C1.Input.value += '5'">  
+<input type="button" name = "six"  value=" 6 " OnClick="C1.Input.value += '6'">  
+<input type="button" name = "minus"  value=" - " OnClick="C1.Input.value += ' - '">  
+<br>  
+<input type="button" name = "seven"  value=" 7 " OnClick="C1.Input.value += '7'">  
+<input type="button" name = "eight"  value=" 8 " OnCLick="C1.Input.value += '8'">  
+<input type="button" name = "nine"  value=" 9 " OnClick="C1.Input.value += '9'">  
+<input type="button" name = "mul"  value=" * "   
+OnClick="C1.Input.value += ' * '">  
+<br>  
+<input type="button" name = "clear"  value=" c " OnClick="C1.Input.value = ''">  
+<input type="button" name="zero"  value=" 0 " OnClick="C1.Input.value += '0'">  
+<input type="button" name="DoIt" value=" = " OnClick="C1.Input.value = eval(C1.Input.value)">  
+<input type="button" name="div"  value=" / " OnClick="C1.Input.value += ' / '">  
+<br>  
+</td>  
+  
+</tr>  
+</table>  
+</form>  
+</body>  
+</html>
